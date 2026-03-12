@@ -27,13 +27,13 @@ la la la la la
 print("hellow world")
 ```
 ### Tables
-|column|item|
-|------|----|
-|astha |really likes dnb music|
-|kanishk| finally leveling up from his phonk instagram ahh music|
+|column |item|
+|-------|----|
+|astha  |really likes dnb music|
+|kanishk|finally leveling up from his phonk instagram ahh music|
 
 ## adding links
 [LinkedIn](https://www.linkedin.com/in/asthaashray/ "Astha Yadav")
 
 ## fave FMAB character rn
-![Hohenheim](https://images2.alphacoders.com/107/thumb-1920-107330.jpg)
+![Hohenheim](https://images2.alphacoders.com/107/thumb-1920-107330.jpg "Hohenheim")
