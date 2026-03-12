@@ -1,4 +1,3 @@
-# serpious
 Hello this is my homepage!
 ____
 > Blockquotes are sure interesting
@@ -27,10 +26,10 @@ la la la la la
 print("hellow world")
 ```
 ### Tables
-|column |item|
-|-------|----|
-|astha  |really likes dnb music|
-|kanishk|finally leveling up from his phonk instagram ahh music|
+| column | item |
+| ------ | ---- |
+| astha  | really likes dnb music |
+| kanishk | finally leveling up from his phonk instagram ahh music |
 
 ## adding links
 [LinkedIn](https://www.linkedin.com/in/asthaashray/ "Astha Yadav")
