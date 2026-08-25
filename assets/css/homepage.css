@@ -1,0 +1,152 @@
+/* Parent wrapper to keep profile card and sections side-by-side */
+.layout-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 110px;
+  width: 100%;
+  max-width: 1150px;
+}
+
+/* white profile card, intended to not disappear, since no sidebar */
+.profile-card {
+  /* Removed margin-right: 45% */
+  background: rgba(245, 248, 247, 1);
+  width: 100%;
+  max-width: 550px;
+  padding: 45px 40px;
+  border-radius: 13px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+/* white profile card previous one
+.profile-card {
+  margin-right: 45%;
+  background: #f5f8f7;
+  width: 100%;
+  max-width: 550px;
+  padding: 45px 40px;
+  border-radius: 13px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+  opacity: 1;
+  visibility: visible;
+}
+it fades out on smaller width screens, code in mobile section */
+
+/* titles */
+.title {
+  /* font-family: 'Roboto Serif', Georgia, serif; */
+  color: #81425f;
+  font-size: 2.2rem;
+  font-weight: 400;
+  margin-bottom: 8px;
+}
+
+.subtitle {
+  color: #81425f;
+  font-size: 1.1rem;
+  font-weight: 400;
+  margin-bottom: 25px;
+}
+
+
+/* Avatar Image */
+.avatar-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 25px;
+}
+
+.avatar {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 5px solid #a15277;
+}
+
+/* Bio Text */
+.bio {
+  color: #666666;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+/* Button */
+.btn-portfolio {
+  display: inline-block;
+  padding: 12px 35px;
+  border: 2px solid #a15277;
+  color: #a15277;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.85rem;
+  letter-spacing: 1px;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+  margin-bottom: 25px;
+}
+
+.btn-portfolio:hover {
+  background-color: #81425f;
+  color: #ffffff;
+}
+
+/* ====================================
+   Sections on the right
+==================================== */
+
+/* Right-side container holding the 4 tiles */
+.sections {
+  display: flex;
+  flex-direction: column;
+  gap: 26px; /* Spacing between bars */
+  width: 100%;
+  max-width: 350px;
+  background: transparent;
+  padding: 0;
+  box-shadow: none; 
+}
+
+/* Base style for transparent rectangular tiles */
+.section-tile {
+  width: 85%; /* leaves room for left/right disco */
+  padding: 28px 24px;
+  background: rgba(129, 66, 95, 0.4); /* transparent glass look */
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(129, 66, 95, 0.4);
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.section-tile a,
+.section-tile a:visited {
+    color: rgba(245, 248, 247, 0.60);;
+    font-size: 1.1rem;       /* Larger text size (default is ~0.95rem–1rem) */
+    font-weight: 200;        /* Slightly bolder weight */
+    letter-spacing: 0.5px;   /* Adds a clean, modern look */
+    display: block;          /* Makes the entire area clickable */
+  }
+
+.section-tile:hover {
+  transform: translateY(-3px);
+  background: rgba(245, 248, 247, 0.6);
+}
+
+/* Alternating Alignment */
+.tile-left {
+  align-self: flex-start; /* pushes tile to the left edge*/
+  text-align: center;
+}
+
+.tile-right {
+  align-self: flex-end; /* pushes tile to the right edge*/
+  text-align: center;
+}

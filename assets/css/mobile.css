@@ -1,0 +1,259 @@
+
+/* ====================================================
+   Mobile Responsive Adjustments - Across all sections
+   ==================================================== */
+
+/* fade out when the hide-mobile class is added */
+@media (max-width: 700px) {
+  .profile-card.hide-mobile {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none; /* Prevents clicking links on the card while invisible */
+  }
+}
+
+@media (max-width: 600px) {
+  
+  /* Added viewport margin so background image is visible around the edges */
+  body {
+    padding: 16px; /* Prevents profile card from touching screen edges */
+  }
+
+  #main {
+    margin-left: 0 !important;
+  }
+  
+  /* Ensure profile card stays perfectly centered */
+  .profile-card {
+    margin: 0 auto;
+  }
+
+  /* Made the white card compact */
+  .profile-card {
+    max-width: 100%;
+    padding: 24px 18px; /* Reduced top/bottom and side padding */
+    border-radius: 16px;
+    
+    /* Subtle translucency lets background hint through while keeping text readable */
+    background: rgba(255, 255, 255, 0.95);
+    -webkit-backdrop-filter: blur(8px); /*This is for iOS devices*/
+    backdrop-filter: blur(8px); /* Glassmorphism blur effect */
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+  }
+
+  /* scaling down text and headings and all*/
+  .profile-card h1 {
+    font-size: 1.4rem;
+    margin-bottom: 8px;
+  }
+
+  .profile-card p {
+    font-size: 0.9rem;
+    line-height: 1.4;
+  }
+
+  .title {
+    font-size: 1.6rem;
+    margin-bottom: 4px;
+  }
+
+  .subtitle {
+    font-size: 0.95rem;
+    margin-bottom: 18px;
+  }
+
+  .bio {
+    font-size: 0.88rem;
+    line-height: 1.5;
+    margin-bottom: 20px;
+  }
+
+  .bg-copyright {
+    right: auto;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 8px;
+    white-space: nowrap;
+  }
+
+  /* tighter social links spacing */
+  .social-links {
+    gap: 12px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  /* Full-width button for easy tapping */
+  .btn-portfolio {
+    display: block;
+    width: 100%;
+    padding: 12px 0;
+    text-align: center;
+    font-size: 0.85rem;
+  }
+
+  /* scale down visual elements ie menu, sidebar, icons */
+  img.menu-icon {
+    width: 100px;
+    height: auto; /* to maintain aspect ratio and have no stretching */
+  }
+
+  .openbtn {
+    position: fixed;
+    top: 30px;
+    left: 50px;
+    font-size: 25px;
+    cursor: pointer;
+    background-color: transparent;
+    color: #f5f8f7;
+    border-color: transparent;
+    border-style: solid;
+  }
+
+  .avatar {
+    width: 90px;
+    height: 90px;
+    border-width: 3px;
+  }
+
+  .social-icon {
+    width: 40px;
+    height: 40px;
+  }
+
+  .social-icon img {
+    width: 20px;
+    height: 20px;
+  }
+  
+.sans-text {
+  font-family: 'Right Grotesk', sans-serif;
+  color: #888888;
+  font-size: 0.85rem;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+}
+
+
+@media (max-width: 450px) {
+
+  /* Added viewport margin so background image is visible around the edges */
+  body {
+    padding: 16px; /* Prevents profile card from touching screen edges */
+  }
+
+  #main {
+    margin-left: 0 !important;
+  }
+  
+  /* Ensure profile card stays perfectly centered */
+  .profile-card {
+    margin: 0 auto;
+  }
+
+  /* Made the white card compact */
+  .profile-card {
+    max-width: 85%;
+    padding: 15px 15px; /* Reduced top/bottom and side padding */
+    border-radius: 16px;
+    
+    /* Subtle translucency lets background hint through while keeping text readable */
+    background: rgba(255, 255, 255, 0.95);
+    -webkit-backdrop-filter: blur(8px); /*This is for iOS devices*/
+    backdrop-filter: blur(8px); /* Glassmorphism blur effect */
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+  }
+
+  /* scaling down text and headings and all*/
+  .profile-card h1 {
+    font-size: 1.3rem;
+    margin-bottom: 8px;
+  }
+
+  .profile-card p {
+    font-size: 0.9rem;
+    line-height: 1.4;
+  }
+
+  
+  .title {
+    font-size: 1.6rem;
+    margin-bottom: 4px;
+  }
+
+  .subtitle {
+    font-size: 0.8rem;
+    margin-bottom: 18px;
+  }
+
+  .bio {
+    font-size: 0.9rem;
+    line-height: 1.5;
+    margin-bottom: 20px;
+  }
+
+  .bg-copyright {
+    right: auto;
+    left: 35%;
+    transform: translateX(-50%);
+    bottom: 4px;
+    white-space: wrap;
+  }
+
+  /* tighter social links spacing */
+  .social-links {
+    gap: 7px;
+    margin-top: 7px;
+    margin-bottom: 7px;
+  }
+
+  /* Full-width button for easy tapping */
+  .btn-portfolio {
+    display: block;
+    width: 100%;
+    padding: 10px 0;
+    text-align: center;
+    font-size: 0.77rem;
+  }
+
+  img.menu-icon {
+    width: 90px;
+    height: auto; /* to maintain aspect ratio and have no stretching */
+  }
+
+  .openbtn {
+    position: fixed;
+    top: 5px;
+    left: 10px;
+    font-size: 25px;
+    cursor: pointer;
+    background-color: transparent;
+    color: #f5f8f7;
+    border-color: transparent;
+    border-style: solid;
+  }
+
+  .avatar {
+    width: 90px;
+    height: 90px;
+    border-width: 3px;
+  }
+
+  .social-icon {
+    width: 35px;
+    height: 35px;
+  }
+
+  .social-icon img {
+    width: 20px;
+    height: 20px;
+  }
+  .sans-text {
+    font-family: 'Right Grotesk', sans-serif;
+    color: #888888;
+    font-size: 0.7rem;
+    line-height: 1;
+    margin-bottom: 25px;
+  }
+}

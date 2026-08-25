@@ -3,36 +3,24 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>asthayadav</title>
-  <link rel="stylesheet" href="assets/css/style.css">
+
+  <!-- Page Title -->
+  <title>asthayadav | My Work</title>
+
+  <!-- Section Specific CSS -->
+  <link rel="stylesheet" href="assets/css/homepage.css">
+
+  <!-- Importing common CSS -->
+  <link rel="stylesheet" href="assets/css/base.css">
+  <link rel="stylesheet" href="assets/css/mobile.css">
+  <!-- Webpage Icon -->
   <link rel="icon" type="image/svg+xml" href="images/icons/favicon.svg">
+  <!-- JS Script -->
   <script src="assets/js/main.js"></script>
 </head>
+
 <body>
-
-  <div id="mySidebar" class="sidebar">
-    <div class="closebtn" onclick="closeNav()">
-      <img src="images/icons/close-button-berry-big.svg", width="30", height="30", alt="Close Button">
-    </div>
-    <div>
-      <a href="https://serpious.github.io/blog/_blog.html">Physics & CS Blog</a>
-    </div>
-    <div>
-      <a href="https://serpious.github.io/projects/_projects.html">My Projects</a>
-    </div>
-    <div>
-      <a href="https://serpious.github.io/thoughts/_thoughts.html">ash's musings</a>
-    </div>
-    <!-- <div>
-      <a href="https://serpious.github.io/ashart/">ash's musings</a>
-    </div> -->
-  </div>
-
-  <div id="main">
-	<button class="openbtn" onclick="openNav()">
-    <img class = "menu-icon" src="images/icons/menu-button-4.svg" alt="Menu Button">
-    <!-- <img src="images\icons\menu-button-white.svg", width="100", height="50"> -->
-  </button>
+  <main id = "main", class = "layout-wrapper">
   <div class="profile-card">
     <h1 class="title">Astha Yadav</h1>
     <p class="subtitle">Quantum Communications Research Student</p>
@@ -94,9 +82,28 @@
       <p>Background image taken and edited by me.</p>
     </div> -->
   </div>
-    <div class="bg-copyright">
-      Webdesign and background image by Astha Yadav. &copy; Image rights reserved.
+
+  <div class = "sections">
+    <div class = "section-tile tile-left">
+      <a href="https://serpious.github.io/ashwork/_ashwork.html#articles">Articles</a>
     </div>
+    <div class = "section-tile tile-right">
+      <a href="https://serpious.github.io/ashwork/_ashwork.html#projects">Projects</a>
+    </div>
+    <div class = "section-tile tile-left">
+      <a href = "https://serpious.github.io/blog/_blog.html#physics">Blog - Physics Section</a>
+    </div>
+    <div class = "section-tile tile-right">
+      <a href="https://serpious.github.io/blog/_blog.html#cs">Blog - Computer Science</a>
+    </div>
+    <div class = "section-tile tile-left">
+      <a href="https://serpious.github.io/thoughts/_thoughts.html">ash's musings</a>
+    </div>
+  </div>
+  </main>
+
+  <div class="bg-copyright">
+    Webdesign and background image by Astha Yadav. &copy; Image rights reserved.
   </div>
 
 </body>

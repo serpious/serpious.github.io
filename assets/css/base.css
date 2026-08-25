@@ -1,0 +1,243 @@
+@font-face {
+  font-family: 'Right Grotesk';
+  src: url('../fonts/RightGrotesk-Medium.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* General Setup */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto Serif', Georgia, serif;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    padding: 20px;
+  
+    background-image: url('/images/bg.webp');
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+}
+
+body.blur{
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+
+  background-image: url('/images/bg.webp');
+  background-size: cover; 
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed; 
+  -webkit-backdrop-filter: blur(8px); /*This is for iOS devices*/
+  backdrop-filter: blur(8px)
+}
+
+#main {
+  transition: margin-left .5s;
+}
+
+img.menu-icon {
+  width: 120px;
+  height: 55px;
+}
+
+.sans-text {
+  font-family: 'Right Grotesk', sans-serif;
+  color: #888888;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+/* Any sort of site message */
+.caution-message {
+  font-family: 'Right Grotesk', sans-serif;
+  color: rgba(255, 255, 255, 0.65);
+}
+
+.home-button{
+  font-family: 'Right Grotesk', sans-serif;
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  font-size: 25px;
+  cursor: pointer;
+  background-color: transparent;
+  color: rgba(245, 248, 247, 0.65);
+  border-color: transparent;
+  border-style: solid;
+}
+
+/* Footer Links */
+.footer-credits {
+  font-size: 0.8rem;
+  color: #999999;
+}
+
+.footer-credits a {
+  color: #888888;
+  text-decoration: underline;
+}
+
+/* Social Links */
+.social-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px; /* spacing bw*/
+  margin-top: 15px;
+  margin-bottom: 30px;
+}
+
+/* Circle Button Base */
+.social-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: 2px solid #81425f;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-sizing: border-box;
+}
+
+/* Icon Images Inside Circles */
+.social-icon img {
+  width: 22px;
+  height: 22px;
+  object-fit: contain;
+  transition: transform 0.2s ease, filter 0.3s ease;
+}
+
+/* Hover Effects */
+.social-icon:hover {
+  background-color: #81425f;
+  transform: translateY(-3px);
+  box-shadow: 0 5px 12px #a15277;
+}
+
+/* subtle icon zoom on hover */
+.social-icon:hover img {
+  transform: scale(1.1);
+  /* inverts svg color */
+  filter: brightness(0) invert(1); 
+}
+
+.home-icon:hover{
+  transform: scale(1.01)
+}
+
+/* all links */
+a {
+  font-family: inherit;      
+  color: #a15277;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+/* Hover state*/
+a:hover {
+  color: #428164;
+  text-decoration: underline;
+}
+
+/* Visited state */
+a:visited {
+  color: #a15277;
+}
+
+a.white-link,
+a.white-link:visited {
+  color: #f5f8f7;
+  text-decoration: none;
+}
+
+/* Hover state for white links */
+a.white-link:hover {
+  color: #a15277;
+  text-decoration: none; 
+}
+
+/* specially made this for the home button link </3 */
+a.home-link,
+a.home-link:visited {
+  color: rgba(245, 248, 247, 0.65);
+  text-decoration: none;
+}
+a.home-link:hover {
+  color: rgba(245, 248, 247, 0.65); 
+  text-decoration: none;
+  font-size: larger;
+}
+
+/*Side bar*/
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #f5f8f7;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 100px;
+}
+
+/* Sidebar Options */
+.sidebar div {
+  font-family:'Right Grotesk', sans-serif;
+  padding: 8px 8px 8px 30px;
+  font-size: 24px;
+  display: block;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+/* Sidebar close button */
+.sidebar .closebtn {
+  position: absolute;
+  top: 22px;
+  right: 25px;
+}
+
+/* The open button */
+.openbtn {
+  position: fixed;
+  top: 30px;
+  left: 50px;
+  font-size: 25px;
+  cursor: pointer;
+  background-color: transparent;
+  color: #f5f8f7;
+  border-color: transparent;
+  border-style: solid;
+}
+
+/* Copyright Footer */
+.bg-copyright {
+  position: fixed;
+  bottom: 12px;
+  right: 16px;
+  font-size: 0.65rem;
+  color: rgba(245, 248, 247, 0.65); /* semi-transparent */
+  font-family: inherit;
+  z-index: 100;
+  pointer-events: none; /* so it doesn't block clicks on nearby links */
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.6); /* for added contrast */
+}
+/* I will it to bottom-center on mobile screens */
